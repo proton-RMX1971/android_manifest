@@ -1105,4 +1105,8 @@
 
   <!-- ProtonAOSP changes -->
   <include name="proton.xml"/>
+
+  <!-- ProtonRMX1971 -->
+  <include name="caf.xml"/>
+  <include name="proton-RMX1971.xml"/>
 </manifest>
