@@ -9,17 +9,18 @@
   <remote name="proton-ssh" fetch="ssh://git@github.com/ProtonAOSP" revision="sc-v2" />
   <remote name="blobs" fetch="https://github.com/NeutronBlobs" revision="sc-v2" />
   <remote name="blobs-ssh" fetch="ssh://git@github.com/NeutronBlobs" revision="sc-v2" />
+  <remote name="proton-RMX1971" fetch="https://github.com/proton-RMX1971" revision="sc" />
 
   <!-- Remove existing repositories -->
   <remove-project name="platform/external/zlib" />
 
   <!-- Replace existing repositories -->
   <remove-project name="platform/frameworks/base" />
-  <project name="android_frameworks_base" path="frameworks/base" remote="proton" groups="proton" />
+  <project name="android_frameworks_base" path="frameworks/base" remote="proton-RMX1971" groups="proton" />
   <remove-project name="platform/libcore" />
   <project name="android_libcore" path="libcore" remote="proton" groups="proton" />
   <remove-project name="platform/build" />
-  <project name="android_build_make" path="build/make" remote="proton" groups="proton">
+  <project name="android_build_make" path="build/make" remote="proton-RMX1971" groups="proton">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -60,9 +61,9 @@
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <project name="android_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/Settings" />
-  <project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="proton" groups="proton" />
+  <project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="proton-RMX1971" groups="proton" />
   <remove-project name="platform/frameworks/native" />
-  <project name="android_frameworks_native" path="frameworks/native" remote="proton" groups="proton" />
+  <project name="android_frameworks_native" path="frameworks/native" remote="proton-RMX1971" groups="proton" />
   <remove-project name="platform/external/jemalloc_new" />
   <project name="android_external_jemalloc_new" path="external/jemalloc_new" remote="proton" groups="proton" />
   <remove-project name="platform/packages/modules/Permission" />
@@ -124,7 +125,7 @@
   <project name="android_system_vold" path="system/vold" remote="proton" groups="proton" />
 
   <!-- Add new repositories -->
-  <project name="android_vendor_proton" path="vendor/proton" remote="proton" groups="proton" />
+  <project name="android_vendor_proton" path="vendor/proton" remote="proton" groups="proton-RMX1971" />
   <project name="android_packages_apps_ProtonWallpaperStub" path="packages/apps/ProtonWallpaperStub" remote="proton" groups="proton" />
   <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="proton" groups="proton" />
   <project name="android_packages_apps_Jelly" path="packages/apps/Jelly" remote="proton" groups="proton" />
