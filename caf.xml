@@ -22,7 +22,8 @@
   <project name="device/qcom/qssi_32go" path="device/qcom/qssi_32go" remote="caf_system"/>
 
   <!-- Sepolicy -->
-  <project name="device/qcom/sepolicy" path="device/qcom/sepolicy" remote="caf_system"/>
+  <project path="device/qcom/sepolicy" name="proton-RMX1971/android_device_qcom_sepolicy" remote="github" revision="sc" />
+  <project path="device/qcom/sepolicy_vndr" name="proton-RMX1971/android_device_qcom_sepolicy_vndr" remote="github" revision="sc" />
 
   <!-- CAF System -->
   <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" remote="caf_system"/>
