@@ -71,6 +71,8 @@
   <project path="vendor/qcom/opensource/interfaces" name="proton-RMX1971/android_vendor_qcom-opensource_interfaces" remote="github" revision="sc" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="proton-RMX1971/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="github" revision="sc" />
   <project path="vendor/qcom/opensource/power" name="proton-RMX1971/android_vendor_qcom-opensource_power" remote="github" revision="sc" />
+  <remove-project name="android_vendor_qcom_opensource_commonsys-intf_display" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="proton-RMX1971/android_vendor_qcom-opensource_commonsys-intf_display" remote="github" revision="sc" />
   <remove-project name="platform/hardware/qcom/display" />
   <project path="hardware/qcom/display" name="proton-RMX1971/hardware_qcom_display" remote="github" revision="sc" />
   <remove-project name="platform/hardware/qcom/media" />
