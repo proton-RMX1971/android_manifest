@@ -16,11 +16,6 @@
           review="codeaurora.org"
           revision="refs/tags/LA.UM.9.8.r1-04200-SDM710.0"/>
 
-  <!-- QSSI -->
-  <project name="device/qcom/qssi" path="device/qcom/qssi" remote="caf_system"/>
-  <project name="device/qcom/qssi_32" path="device/qcom/qssi_32" remote="caf_system"/>
-  <project name="device/qcom/qssi_32go" path="device/qcom/qssi_32go" remote="caf_system"/>
-
   <!-- Sepolicy -->
   <project path="device/qcom/sepolicy" name="proton-RMX1971/android_device_qcom_sepolicy" remote="github" revision="sc" />
   <project path="device/qcom/sepolicy_vndr" name="proton-RMX1971/android_device_qcom_sepolicy_vndr" remote="github" revision="sc" />
@@ -37,39 +32,18 @@
     <linkfile dest="kernel/Android.mk" src="build/stop_scan.mk"/>
     <linkfile dest="disregard/Android.mk" src="build/stop_scan.mk"/>
   </project>
-  <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" remote="caf_system"/>
-  <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" remote="caf_system"/>
   <project name="platform/external/ant-wireless/hidl" path="external/ant-wireless/hidl" remote="caf_system"/>
   <remove-project name="platform/external/tinycompress" />
   <project name="platform/external/tinycompress" path="external/tinycompress" remote="caf_system"/>
-  <project  name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/commonsys/bluetooth" remote="caf_system"/>
-  <project  name="platform/vendor/qcom-opensource/display-commonsys" path="vendor/qcom/opensource/commonsys/display" remote="caf_system">
-    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
-  </project>
-  <project  name="platform/external/json-c" path="external/json-c" remote="caf_system"/>
+  <project name="platform/vendor/qcom-opensource/display-commonsys" path="vendor/qcom/opensource/commonsys/display" remote="caf_system"/>
+  <project name="platform/external/json-c" path="external/json-c" remote="caf_system"/>
 
   <!-- CAF Telephony -->
-  <project  name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/telephony" remote="caf_system"/>
+  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/telephony" remote="caf_system"/>
 
   <!-- CAF Vendor -->
   <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" remote="caf_vendor"/>
-  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" remote="caf_vendor"/>
-  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" remote="caf_vendor"/>
-  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" remote="caf_vendor"/>
-  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" remote="caf_vendor"/>
-  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" remote="caf_vendor"/>
-  <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" remote="caf_vendor"/>
   <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" remote="caf_vendor"/>
-  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" remote="caf_vendor"/>
-  <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" remote="caf_vendor"/>
-  <project name="platform/vendor/qcom/opensource/datarmnet" path="vendor/qcom/opensource/datarmnet" remote="caf_vendor">
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/datarmnet_dlkm_vendor_board.mk" src="datarmnet_dlkm_vendor_board.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_dlkm_vendor_product.mk" src="datarmnet_dlkm_vendor_product.mk"/>
-  </project>
-  <project name="platform/vendor/qcom/opensource/datarmnet-ext" path="vendor/qcom/opensource/datarmnet-ext" remote="caf_vendor">
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/datarmnet_ext_dlkm_vendor_board.mk" src="datarmnet_ext_dlkm_vendor_board.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_ext_dlkm_vendor_product.mk" src="datarmnet_ext_dlkm_vendor_product.mk"/>
-  </project>
   <project name="platform/vendor/qcom-opensource/wfd-commonsys" path="vendor/qcom/opensource/commonsys-intf/wfd" remote="caf_vendor"/>
 
 </manifest>
