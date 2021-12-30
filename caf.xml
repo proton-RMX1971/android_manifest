@@ -48,25 +48,21 @@
   </project>
   <project  name="platform/external/json-c" path="external/json-c" remote="caf_system"/>
 
-<!-- CAF Telephony -->
+  <!-- CAF Telephony -->
   <project  name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/telephony" remote="caf_system"/>
 
   <!-- CAF Vendor -->
   <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" remote="caf_vendor"/>
   <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" remote="caf_vendor"/>
-  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" remote="caf_vendor">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/dataservices_vendor_product.mk" src="dataservices_vendor_product.mk"/>
-  </project>
   <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" remote="caf_vendor"/>
   <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" remote="caf_vendor"/>
   <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" remote="caf_vendor"/>
   <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" remote="caf_vendor"/>
   <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" remote="caf_vendor"/>
   <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" remote="caf_vendor"/>
-  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" remote="caf_vendor"/>
   <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" remote="caf_vendor"/>
   <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" remote="caf_vendor"/>
-    <project name="platform/vendor/qcom/opensource/datarmnet" path="vendor/qcom/opensource/datarmnet" remote="caf_vendor">
+  <project name="platform/vendor/qcom/opensource/datarmnet" path="vendor/qcom/opensource/datarmnet" remote="caf_vendor">
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/datarmnet_dlkm_vendor_board.mk" src="datarmnet_dlkm_vendor_board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_dlkm_vendor_product.mk" src="datarmnet_dlkm_vendor_product.mk"/>
   </project>
