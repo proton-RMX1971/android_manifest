@@ -31,16 +31,6 @@
 
   <!-- CAF Vendor -->
   <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" remote="caf_vendor"/>
-  <remove-project name="android_vendor_qcom_opensource_core-utils" />
-  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" remote="caf_vendor">
-    <linkfile dest="vendor/qcom/build/tasks/QSSI_violators.mk" src="build/QSSI_violators.mk"/>
-    <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk"/>
-    <linkfile dest="vendor/qcom/build/tasks/vendor_prop_context_restriction.mk" src="build/vendor_prop_context_restriction.mk"/>
-    <linkfile dest="vendor/qcom/build/tasks/generate_vendor_bundle.mk" src="image_generation_tool/generate_vendor_bundle.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/image_generation_tool_product.mk" src="image_generation_tool/config/image_generation_tool_product.mk"/>
-    <linkfile dest="kernel/Android.mk" src="build/stop_scan.mk"/>
-    <linkfile dest="disregard/Android.mk" src="build/stop_scan.mk"/>
-  </project>
   <project name="platform/vendor/qcom-opensource/display-commonsys" path="vendor/qcom/opensource/commonsys/display" remote="caf_vendor"/>
   <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" remote="caf_vendor"/>
   <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" remote="caf_vendor"/>
