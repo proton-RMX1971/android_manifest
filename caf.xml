@@ -21,9 +21,18 @@
   <project path="device/qcom/sepolicy_vndr" name="proton-RMX1971/android_device_qcom_sepolicy_vndr" remote="github" revision="sc" />
 
   <!-- CAF System -->
-  <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" remote="caf_system"/>
+  <project name="platform/external/ant-wireless/hidl" path="external/ant-wireless/hidl" remote="caf_system"/>
+  <remove-project name="platform/external/tinycompress" />
+  <project name="platform/external/tinycompress" path="external/tinycompress" remote="caf_system"/>
+  <project name="platform/external/json-c" path="external/json-c" remote="caf_system"/>
+
+  <!-- CAF Telephony -->
+  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/telephony" remote="caf_system"/>
+
+  <!-- CAF Vendor -->
+  <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" remote="caf_vendor"/>
   <remove-project name="android_vendor_qcom_opensource_core-utils" />
-  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" remote="caf_system">
+  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" remote="caf_vendor">
     <linkfile dest="vendor/qcom/build/tasks/QSSI_violators.mk" src="build/QSSI_violators.mk"/>
     <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk"/>
     <linkfile dest="vendor/qcom/build/tasks/vendor_prop_context_restriction.mk" src="build/vendor_prop_context_restriction.mk"/>
@@ -32,16 +41,7 @@
     <linkfile dest="kernel/Android.mk" src="build/stop_scan.mk"/>
     <linkfile dest="disregard/Android.mk" src="build/stop_scan.mk"/>
   </project>
-  <project name="platform/external/ant-wireless/hidl" path="external/ant-wireless/hidl" remote="caf_system"/>
-  <remove-project name="platform/external/tinycompress" />
-  <project name="platform/external/tinycompress" path="external/tinycompress" remote="caf_system"/>
-  <project name="platform/vendor/qcom-opensource/display-commonsys" path="vendor/qcom/opensource/commonsys/display" remote="caf_system"/>
-  <project name="platform/external/json-c" path="external/json-c" remote="caf_system"/>
-
-  <!-- CAF Telephony -->
-  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/telephony" remote="caf_system"/>
-
-  <!-- CAF Vendor -->
+  <project name="platform/vendor/qcom-opensource/display-commonsys" path="vendor/qcom/opensource/commonsys/display" remote="caf_vendor"/>
   <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" remote="caf_vendor"/>
   <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" remote="caf_vendor"/>
   <project name="platform/vendor/qcom-opensource/wfd-commonsys" path="vendor/qcom/opensource/commonsys-intf/wfd" remote="caf_vendor"/>
