@@ -1107,6 +1107,7 @@
   <include name="proton.xml"/>
 
   <!-- ProtonRMX1971 -->
+  <include name="remove.xml"/>
   <include name="caf.xml"/>
   <include name="proton-RMX1971.xml"/>
 </manifest>
