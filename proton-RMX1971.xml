@@ -16,6 +16,10 @@
   <project path="hardware/qcom/media" name="proton-RMX1971/hardware_qcom_media" remote="github" revision="sc" />
   <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="proton-RMX1971/vendor_qcom_opensource_audio-hal_primary-hal" remote="github" revision="sc" />
 
+  <!-- Our AOSP Forks -->
+  <remove-project name="platform/frameworks/libs/net" />
+  <project name="android_frameworks_libs_net" path="frameworks/libs/net" remote="github" />
+
   <!-- RMX1971 Trees -->
   <project path="device/realme/sdm710-common" name="proton-RMX1971/android_device_realme_sdm710-common" remote="github" revision="sc" />
   <project path="vendor/realme/sdm710-common" name="proton-RMX1971/android_vendor_realme_sdm710-common" remote="github" revision="sc" />
