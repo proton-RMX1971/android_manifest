@@ -32,4 +32,8 @@
   <project path="packages/apps/DeskClock" name="Octavi-OS/platform_packages_apps_DeskClock" remote="github" revision="12" />
   <project path="packages/apps/Dialer" name="Octavi-OS/platform_packages_apps_Dialer" remote="github" revision="12" />
   <project path="packages/apps/Messaging" name="Octavi-OS/platform_packages_apps_Messaging" remote="github" revision="12" />
+
+  <!-- FOSS Apps-->
+  <project path="vendor/foss" name="proton-RMX1971/android_vendor_foss" remote="github" revision="sc" />
+
 </manifest>
