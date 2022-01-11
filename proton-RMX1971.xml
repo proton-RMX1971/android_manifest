@@ -18,7 +18,7 @@
 
   <!-- Our AOSP Forks -->
   <remove-project name="platform/frameworks/libs/net" />
-  <project name="android_frameworks_libs_net" path="frameworks/libs/net" remote="github" />
+  <project name="proton-RMX1971/android_frameworks_libs_net" path="frameworks/libs/net" remote="github" revision="sc" />
 
   <!-- RMX1971 Trees -->
   <project path="device/realme/sdm710-common" name="proton-RMX1971/android_device_realme_sdm710-common" remote="github" revision="sc" />
