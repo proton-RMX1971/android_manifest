@@ -27,13 +27,16 @@
   <project path="vendor/realme/RMX1971" name="proton-RMX1971/android_vendor_realme_RMX1971" remote="github" revision="sc" />
   <project path="kernel/realme/RMX1971" name="proton-RMX1971/kernel_realme_RMX1971" remote="github" revision="sc" />
 
-  <!--- OctaviOS AOSP Apps-->
+  <!--- OctaviOS AOSP Apps -->
   <project path="packages/apps/ExactCalculator" name="Octavi-OS/platform_packages_apps_ExactCalculator" remote="github" revision="12" />
   <project path="packages/apps/DeskClock" name="Octavi-OS/platform_packages_apps_DeskClock" remote="github" revision="12" />
   <project path="packages/apps/Dialer" name="Octavi-OS/platform_packages_apps_Dialer" remote="github" revision="12" />
   <project path="packages/apps/Messaging" name="Octavi-OS/platform_packages_apps_Messaging" remote="github" revision="12" />
 
-  <!-- FOSS Apps-->
+  <!-- FOSS Apps -->
   <project path="vendor/foss" name="proton-RMX1971/android_vendor_foss" remote="github" revision="sc" />
+
+  <!-- Missings AOSP Stuff -->
+  <project path="external/tinyxml" name="platform/external/tinyxml" remote="aosp" revision="android11-release" />
 
 </manifest>
