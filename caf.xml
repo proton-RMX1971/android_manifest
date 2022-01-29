@@ -9,12 +9,7 @@
   <remote name="caf_vendor"
           fetch="https://source.codeaurora.org/quic/la"
           review="codeaurora.org"
-          revision="refs/tags/LA.UM.10.3.r1-00500-sdm845.0"/>
-
-  <remote name="caf_sdm710"
-          fetch="https://source.codeaurora.org/quic/la"
-          review="codeaurora.org"
-          revision="refs/tags/LA.UM.9.8.r1-04200-SDM710.0"/>
+          revision="refs/tags/LA.UM.10.3.r1-00600-sdm845.0"/>
 
   <!-- Sepolicy -->
   <project path="device/qcom/sepolicy" name="proton-RMX1971/android_device_qcom_sepolicy" remote="github" revision="sc" />
