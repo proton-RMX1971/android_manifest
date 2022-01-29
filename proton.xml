@@ -119,7 +119,7 @@
   <project name="android_system_vold" path="system/vold" remote="proton" groups="proton" />
 
   <!-- Add new repositories -->
-  <project name="android_vendor_proton" path="vendor/proton" remote="proton" groups="proton-RMX1971" />
+  <project name="android_vendor_proton" path="vendor/proton" remote="proton-RMX1971" groups="proton" />
   <project name="android_packages_apps_ProtonWallpaperStub" path="packages/apps/ProtonWallpaperStub" remote="proton" groups="proton" />
   <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="proton" groups="proton" />
   <project name="android_packages_apps_Jelly" path="packages/apps/Jelly" remote="proton" groups="proton" />
