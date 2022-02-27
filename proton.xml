@@ -39,7 +39,7 @@
   <remove-project name="platform/art" />
   <project name="android_art" path="art" remote="proton" groups="proton" />
   <remove-project name="platform/system/core" />
-  <project name="android_system_core" path="system/core" remote="proton" groups="proton" />
+  <project name="android_system_core" path="system/core" remote="proton-RMX1971" groups="proton" />
   <remove-project name="platform/system/sepolicy" />
   <project name="android_system_sepolicy" path="system/sepolicy" remote="proton" groups="proton" />
   <remove-project name="platform/external/noto-fonts" />
