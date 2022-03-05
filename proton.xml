@@ -30,7 +30,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <remove-project name="platform/build/soong" />
-  <project name="android_build_soong" path="build/soong" remote="proton" groups="proton">
+  <project name="android_build_soong" path="build/soong" remote="proton-RMX1971" groups="proton">
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
