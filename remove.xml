@@ -16,7 +16,7 @@
   <remove-project name="android_device_google_redfin" />
   <remove-project name="device/google/redbull-kernel" />
   <remove-project name="device/google/redfin-sepolicy" />
-  <remove-project name="android_vendor_google" />
+  <remove-project name="android_vendor_google_devices" />
   <remove-project name="device/google/fuchsia" />
   <remove-project name="device/google/trout" />
   <remove-project name="device/google_car" />
